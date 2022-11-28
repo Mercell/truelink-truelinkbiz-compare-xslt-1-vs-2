@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:stat="urn:oasis:names:tc:ubl:codelist:DocumentStatusCode:1:0"
+	xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+	<cac:InvoiceLine>
+		<cbc:InvoicedQuantity unitCode="ST">12000</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="DKK">19854.72</cbc:LineExtensionAmount>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="DKK">11.49</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+</Invoice>
