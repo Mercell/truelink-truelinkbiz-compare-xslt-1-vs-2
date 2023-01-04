@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:sdt="urn:oasis:names:specification:ubl:schema:xsd:SpecializedDatatypes-2" xmlns:ccts="urn:oasis:names:specification:ubl:schema:xsd:CoreComponentParameters-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 UBL-Invoice-2.0.xsd">
+	<cbc:UBLVersionID>2.0</cbc:UBLVersionID>
+	<cbc:CustomizationID>OIOUBL-2.02</cbc:CustomizationID>
+	<cbc:ProfileID schemeID="urn:oioubl:id:profileid-1.2" schemeAgencyID="320">urn:www.nesubl.eu:profiles:profile5:ver2.0</cbc:ProfileID>
+	<cbc:ID>20201</cbc:ID>
+	<cbc:CopyIndicator>false</cbc:CopyIndicator>
+	<cbc:IssueDate>2023-01-04</cbc:IssueDate>
+	<cbc:InvoiceTypeCode listID="urn:oioubl:codelist:invoicetypecode-1.1" listAgencyID="320">380</cbc:InvoiceTypeCode>
+	<cbc:DocumentCurrencyCode>DKK</cbc:DocumentCurrencyCode>
+	<cac:OrderReference>
+		<cbc:ID>123456</cbc:ID>
+		<cbc:IssueDate>2015-08-06</cbc:IssueDate>
+	</cac:OrderReference>
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="DK:CVR">DK00000116</cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="DK:CVR">DK00000116</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>tl test company 1</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:AddressFormatCode listID="urn:oioubl:codelist:addressformatcode-1.1" listAgencyID="320">StructuredLax</cbc:AddressFormatCode>
+				<cbc:StreetName>Hederslev, </cbc:StreetName>
+				<cbc:BuildingNumber>32</cbc:BuildingNumber>
+				<cbc:CityName>Kolding</cbc:CityName>
+				<cbc:PostalZone>6002</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID schemeID="DK:SE">DK00000116</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID schemeID="urn:oioubl:id:taxschemeid-1.1" schemeAgencyID="320">63</cbc:ID>
+					<cbc:Name>Moms</cbc:Name>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>tl test company 1</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="DK:CVR">DK00000116</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="GLN" schemeAgencyID="9">0000000000024</cbc:EndpointID>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="GLN" schemeAgencyID="9">0000000000024</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>tl test 2</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:AddressFormatCode listID="urn:oioubl:codelist:addressformatcode-1.1" listAgencyID="320">StructuredLax</cbc:AddressFormatCode>
+				<cbc:StreetName>test</cbc:StreetName>
+				<cbc:BuildingNumber>6000</cbc:BuildingNumber>
+				<cbc:CityName>test</cbc:CityName>
+				<cbc:PostalZone>6000</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>FI</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID schemeID="ZZZ">00000116</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID schemeID="urn:oioubl:id:taxschemeid-1.1" schemeAgencyID="320">63</cbc:ID>
+					<cbc:Name>Moms</cbc:Name>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:Contact>
+				<cbc:ID>432143 21</cbc:ID>
+				<cbc:Name>432143 21</cbc:Name>
+			</cac:Contact>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	<cac:PaymentMeans>
+		<cbc:ID>1</cbc:ID>
+		<cbc:PaymentMeansCode>31</cbc:PaymentMeansCode>
+		<cbc:PaymentDueDate>2017-07-22</cbc:PaymentDueDate>
+		<cbc:PaymentChannelCode listID="urn:oioubl:codelist:paymentchannelcode-1.1" listAgencyID="320">IBAN</cbc:PaymentChannelCode>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>DK12341234</cbc:ID>
+			<cac:FinancialInstitutionBranch>
+				<cac:FinancialInstitution>
+					<cbc:ID>abcdfj12</cbc:ID>
+				</cac:FinancialInstitution>
+			</cac:FinancialInstitutionBranch>
+		</cac:PayeeFinancialAccount>
+	</cac:PaymentMeans>
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="DKK">0.00</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="DKK">600.00</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="DKK">0.00</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID schemeID="urn:oioubl:id:taxcategoryid-1.1" schemeAgencyID="320">StandardRated</cbc:ID>
+				<cbc:Percent>0.00</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID schemeID="urn:oioubl:id:taxschemeid-1.1" schemeAgencyID="320">63</cbc:ID>
+					<cbc:Name>Moms</cbc:Name>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="DKK">600.00</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="DKK">0.00</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="DKK">600.00</cbc:TaxInclusiveAmount>
+		<cbc:PayableAmount currencyID="DKK">600.00</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+	<cac:InvoiceLine>
+		<cbc:ID>0</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="EA">12.00</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="DKK">600.00</cbc:LineExtensionAmount>
+		<cac:Delivery>
+			<cbc:ActualDeliveryDate>2015-08-13</cbc:ActualDeliveryDate>
+			<cac:DeliveryLocation>
+				<cac:Address>
+					<cbc:AddressFormatCode listID="urn:oioubl:codelist:addressformatcode-1.1" listAgencyID="320">StructuredLax</cbc:AddressFormatCode>
+					<cac:Country>
+						<cbc:IdentificationCode>DK</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:Address>
+			</cac:DeliveryLocation>
+		</cac:Delivery>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="DKK">0.00</cbc:TaxAmount>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="DKK">600.00</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="DKK">0.00</cbc:TaxAmount>
+				<cac:TaxCategory>
+					<cbc:ID schemeID="urn:oioubl:id:taxcategoryid-1.1" schemeAgencyID="320">ZeroRated</cbc:ID>
+					<cbc:Percent>00</cbc:Percent>
+					<cac:TaxScheme>
+						<cbc:ID schemeID="urn:oioubl:id:taxschemeid-1.1" schemeAgencyID="320">63</cbc:ID>
+						<cbc:Name>Moms</cbc:Name>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+		<cac:Item>
+			<cbc:Description>test</cbc:Description>
+			<cbc:Name>test</cbc:Name>
+			<cac:SellersItemIdentification>
+				<cbc:ID>1</cbc:ID>
+			</cac:SellersItemIdentification>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="DKK">50.00</cbc:PriceAmount>
+			<cbc:BaseQuantity unitCode="EA">1</cbc:BaseQuantity>
+			<cbc:OrderableUnitFactorRate>1</cbc:OrderableUnitFactorRate>
+		</cac:Price>
+	</cac:InvoiceLine>
+</Invoice> 
