@@ -1,8 +1,13 @@
 ## Description
 
-Small Java 8 project to compare results of ```test="value = 0"``` in XSLT 1.0 and XSLT 2.0 for different values: 0, 0.00, -0, -0.00
+Small Java 8 project to analyse issues with OIOUBL Schematron release 1.13, which is planned to switch to XSLT 2.0 from XSLT 1.0
 
-## Results
+It incldues:
+
+- compare results of ```test="value = 0"``` in XSLT 1.0 and XSLT 2.0 for different values: 0, 0.00, -0, -0.00
+- some test cases of Invoice OIOUBL, where 1.12.3 on XSLT 1.0 and 1.13.1 on XSLT 2.0 provide different validation results.
+
+## Results of ```test="value = 0"```
 
 ```shell script
 XSLT 1.0 result:
@@ -18,7 +23,7 @@ XSLT 2.0 result:
 Attention! -0.00 is NOT 0
 ```
 
-## Reasons for check
+## Reasons for check of ```test="value = 0"```
 
 In OIOUBL Schematron 1.13.0 a migration from XSLT 1.0 to XSLT 2.0 is done.
 
@@ -38,7 +43,8 @@ The comparator goes through files in ```examples``` folder and validates it agai
 
 Examples are usually files which validation results are different to highlight the way how changes in schematron affect the industry.
 
-## Results
+## Results of different test cases
+
 ```shell script
 Validate OIOUBL_Invoice_F-LIB336.xml
 
