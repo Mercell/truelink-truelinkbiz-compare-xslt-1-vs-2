@@ -46,6 +46,8 @@ Examples are usually files which validation results are different to highlight t
 ## Results of different test cases
 
 ```shell script
+----- Compare 1.12.3_xalan vs 1.13.1.eba0ace -----
+
 Validate OIOUBL_Invoice_F-LIB336.xml
 
 Checking OIOUBL-2.1 Invoice, 2022-05-19, Version 1.12.3.d5e8218
@@ -55,7 +57,6 @@ Errors:
 
 Checking OIOUBL-2.1 Invoice, 2022-12-21, Version 1.13.1.eba0ace
 Document is valid.
-
 
 Validate OIOUBL_Invoice_F-LIB381.xml
 
@@ -68,7 +69,6 @@ Errors:
 Checking OIOUBL-2.1 Invoice, 2022-12-21, Version 1.13.1.eba0ace
 Document is valid.
 
-
 Validate OIOUBL_Invoice_F-LIB382_persent_.00_should_fail_in_1.13.1.eba0ace.xml
 
 Checking OIOUBL-2.1 Invoice, 2022-05-19, Version 1.12.3.d5e8218
@@ -77,6 +77,39 @@ Document is valid.
 Checking OIOUBL-2.1 Invoice, 2022-12-21, Version 1.13.1.eba0ace
 Document is valid. BUT SHOULD HAVE FAILED !!!
 
+Validate OIOUBL_Invoice_F-LIB382_persent_0.00_should_fail_in_1.13.1.eba0ace.xml
+
+Checking OIOUBL-2.1 Invoice, 2022-05-19, Version 1.12.3.d5e8218
+Document is valid.
+
+Checking OIOUBL-2.1 Invoice, 2022-12-21, Version 1.13.1.eba0ace
+Document is not valid.
+Errors:
+[F-LIB382] When 'TaxCategor\ID' = 'StandardRated', 'TaxCategory\Percent' can not be '0.00'
+
+Validate OIOUBL_Invoice_F-LIB382_persent_0.0_should_fail_in_1.13.1.eba0ace.xml
+
+Checking OIOUBL-2.1 Invoice, 2022-05-19, Version 1.12.3.d5e8218
+Document is valid.
+
+Checking OIOUBL-2.1 Invoice, 2022-12-21, Version 1.13.1.eba0ace
+Document is valid. BUT SHOULD HAVE FAILED !!!
+
+Validate OIOUBL_Invoice_F-LIB382_persent_00_should_fail_in_1.13.1.eba0ace.xml
+
+Checking OIOUBL-2.1 Invoice, 2022-05-19, Version 1.12.3.d5e8218
+Document is valid.
+
+Checking OIOUBL-2.1 Invoice, 2022-12-21, Version 1.13.1.eba0ace
+Document is valid. BUT SHOULD HAVE FAILED !!!
+
+Validate OIOUBL_Invoice_F-LIB382_persent_0_should_fail_in_1.13.1.eba0ace.xml
+
+Checking OIOUBL-2.1 Invoice, 2022-05-19, Version 1.12.3.d5e8218
+Document is valid.
+
+Checking OIOUBL-2.1 Invoice, 2022-12-21, Version 1.13.1.eba0ace
+Document is valid. BUT SHOULD HAVE FAILED !!!
 
 Validate OIOUBL_Invoice_W-LIB222.xml
 
@@ -87,6 +120,34 @@ Errors:
 
 Checking OIOUBL-2.1 Invoice, 2022-12-21, Version 1.13.1.eba0ace
 Document is valid.
+
+----- Compare 1.12.3_xalan vs 1.13.1.d5ee2f1 -----
+
+Validate OIOUBL_Invoice_F-LIB312.xml
+
+Checking OIOUBL-2.1 Invoice, 2022-05-19, Version 1.12.3.d5e8218
+Document is valid.
+
+Checking OIOUBL-2.1 Invoice, 2023-01-06, Version 1.13.1.d5ee2f1
+Document is not valid.
+Errors:
+[F-LIB312] PaymentMeansCode = 50, InstructionID must be a numeric value when PaymentID equals 04 or 15.
+
+Validate OIOUBL_Invoice_F-LIB382_persent_-0.00_should_fail_in_1.13.1.d5ee2f1.xml
+
+Checking OIOUBL-2.1 Invoice, 2022-05-19, Version 1.12.3.d5e8218
+Document is valid.
+
+Checking OIOUBL-2.1 Invoice, 2023-01-06, Version 1.13.1.d5ee2f1
+Document is valid. BUT SHOULD HAVE FAILED !!!
+
+Validate OIOUBL_Invoice_F-LIB382_persent_-0_should_fail_in_1.13.1.d5ee2f1.xml
+
+Checking OIOUBL-2.1 Invoice, 2022-05-19, Version 1.12.3.d5e8218
+Document is valid.
+
+Checking OIOUBL-2.1 Invoice, 2023-01-06, Version 1.13.1.d5ee2f1
+Document is valid. BUT SHOULD HAVE FAILED !!!
 ```
 
 ## Run and build

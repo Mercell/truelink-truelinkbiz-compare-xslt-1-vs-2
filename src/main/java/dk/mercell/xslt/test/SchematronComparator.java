@@ -27,10 +27,12 @@ public class SchematronComparator {
 	
 	public void run() throws Exception {
 		compare("1.12.3_xalan", "1.13.1.eba0ace");
+		compare("1.12.3_xalan", "1.13.1.d5ee2f1");
 	}
 
 	public void compare(String schOldCode, String schNewCode) throws Exception {
-
+		System.out.println("\n----- Compare " + schOldCode + " vs " + schNewCode + " -----");
+		
 		File[] examples = new File("examples", schOldCode + "_vs_" + schNewCode).listFiles(new FilenameFilter() {
 			@Override
 			public boolean accept(File dir, String name) {
@@ -44,13 +46,9 @@ public class SchematronComparator {
 		XStream validationResultParser = newXStream(new Class<?>[] { SchematronResult.class, SchematronError.class }, SchematronResult.class);
 
 		for (int i = 0; i < examples.length; i++) {
-			if (i > 0) {
-				System.out.println("");
-			}
-
 			File example = examples[i];
 
-			System.out.println("Validate " + example.getName());
+			System.out.println("\nValidate " + example.getName());
 
 			System.out.println("");
 
