@@ -84,7 +84,7 @@
 		<cbc:PaymentMeansCode>50</cbc:PaymentMeansCode>
 		<cbc:PaymentDueDate>2022-08-01</cbc:PaymentDueDate>
 		<cbc:PaymentChannelCode listID="urn:oioubl:codelist:paymentchannelcode-1.1" listAgencyID="320">DK:GIRO</cbc:PaymentChannelCode>
-		<cbc:InstructionID />
+		<cbc:InstructionID></cbc:InstructionID>
 		<cbc:PaymentID schemeID="urn:oioubl:id:paymentid-1.1" schemeAgencyID="320">01</cbc:PaymentID>
 		<cac:PayeeFinancialAccount>
 			<cbc:ID>1073243</cbc:ID>
