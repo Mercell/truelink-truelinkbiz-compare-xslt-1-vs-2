@@ -28,6 +28,7 @@ public class SchematronComparator {
 	public void run() throws Exception {
 		compare("1.12.3_xalan", "1.13.1.eba0ace");
 		compare("1.12.3_xalan", "1.13.1.d5ee2f1");
+		compare("1.12.3_xalan", "1.13.2");
 	}
 
 	public void compare(String schOldCode, String schNewCode) throws Exception {
